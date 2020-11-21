@@ -1,0 +1,40 @@
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.paddingMargin(@padding, @margin) {
+  padding: @padding;
+  margin: @margin;
+}
+
+* {
+  .paddingMargin(0, 0);
+  box-sizing: border-box;
+}
+
+html, body {
+  .size(100%, 100%);
+  background: hsl(30, 100%, 76%);
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  padding: 3px;
+  position: absolute;
+  top: 10px;
+}
+
+/* #mouseTarget {
+  box-sizing: border-box;
+  width:15rem;
+  border:1px solid #333;
+} */
